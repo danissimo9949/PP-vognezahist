@@ -1,15 +1,15 @@
-/* Nav Icon */
+
 .mobile-nav-btn {
 	--time: 0.1s;
 
 	--width: 40px;
 	--height: 30px;
 
-	--line-height: 4px;
-	--spacing: 6px;
+	--line-height: 3px;
+	--spacing: 5px;
 
 	--color: #000;
-	--radius: 4px;
+	--radius: 10px;
 
 	/* Fixed height and width */
 	/* height: var(--height); */
@@ -82,11 +82,11 @@
 
 .mobile-nav-btn {
 	z-index: 999;
-	// display: none;
+	display: none;
 }
 
-// @media (max-width: 1000px) {
-// 	.mobile-nav-btn {
-// 		display: block;
-// 	}
-// }
+@media (max-width: 959px) {
+	.mobile-nav-btn {
+		display: block;
+	}
+}

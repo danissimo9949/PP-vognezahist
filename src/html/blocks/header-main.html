@@ -1,27 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый шаблон</title>
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body>
-		<header class="header">
+<header class="header">
     <div class="container header__container">
         <div class="header__row">
             <div class="header__main-navigation">
                 <div class="logo">ПП Вогнезахист</div>
-                <nav class="header__nav">
-  <ul class="nav">
-      <li class="nav__item"><a class="nav__link active" href="#">Головна</a></li>
-      <li class="nav__item"><a class="nav__link" href="#">Каталог</a></li>
-      <li class="nav__item"><a class="nav__link" href="#">Про нас</a></li>
-      <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
-      <li class="nav__item"><a class="nav__link" href="#">Інше</a></li>
-  </ul>
-</nav>
+                @@include('header-nav.html')
             </div>
             <div class="header__additional-info">
                 <div class="header__contacts">
@@ -60,22 +42,4 @@
         </div>
     </div>
 </header>
-<div class="mobile-nav">
-	<ul class="mobile-nav__list">
-		<li><a href="#" class="active">Головна</a></li>
-		<li><a href="#!">Каталог</a></li>
-		<li><a href="#!">Про нас</a></li>
-		<li><a href="#!">Контакти</a></li>
-		<li><a href="#!">Інше</a></li>
-	</ul>
-</div>
-
-		<footer class="footer">
-	<div class="container">
-		<h2>Footer</h2>
-	</div>
-</footer>
-
-		<script src="./js/index.bundle.js"></script>
-	</body>
-</html>
+@@include('mobile-nav.html')
