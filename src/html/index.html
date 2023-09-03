@@ -4,12 +4,71 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый шаблон</title>
+		<title>БРАНД-МАЙСТЕР</title>
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
 		@@include('blocks/header-main.html')
-		@@include('blocks/footer.html')
+		<main>
+			<section class="services">
+				<div class="container">
+					<h1 class="services__title">
+						Наші послуги
+					</h1>
+					<div class="services__card__grid">
+							<div class="card">
+								<div class="card__image">
+									<img src="./../img/svg/fire-extinguisher.svg" alt="Вогнегасник">
+								</div>
+								<div class="card__title">
+									<h3>Перезарядка вогнегасників</h3>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__image">
+									<img src="./../img/svg/wall.svg" alt="Вогнезахисна обробка">
+								</div>
+								<div class="card__title">
+									<h3>Вогнезахисна обробка</h3>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__image">
+									<img src="./../img/svg/fire-alarm.svg" alt="Пожежна сигналізація">
+								</div>
+								<div class="card__title">
+									<h3>Монтаж і технічне обслуговування систем пожежогасіння та протидимного захисту</h3>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__image">
+									<img src="./../img/svg/security-camera.svg" alt="Камера відеоспостереження">
+								</div>
+								<div class="card__title">
+									<h3>Встановлення і обслуговування систем відеоспостереження</h3>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__image">
+									<img src="./../img/svg/house-with-padlock.svg" alt="Будинок з замком">
+								</div>
+								<div class="card__title">
+									<h3>Встановлення та обслуговування охоронних систем</h3>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__image">
+									<img src="./../img/svg/notepad-svgrepo-com.svg" alt="Блокнот">
+								</div>
+								<div class="card__title">
+									<h3>Протипожежна експертиза</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('blocks/footer.html')
 		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>
