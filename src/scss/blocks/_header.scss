@@ -1,0 +1,100 @@
+.header {
+	background-color: rgb(111, 161, 182);
+	padding: 20px 0;
+	height: auto;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #ccc transparent;
+	}
+
+	&__main-navigation{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	&__contacts{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__phone-icon{
+		display: block;
+		margin-right: 10px;
+		width: 25px;
+    height: 25px;
+		
+		@media (max-width: 959px) {
+			display: none;
+		}
+	}
+
+	&__additional-info{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+}
+
+.nav{
+	display: flex;
+	flex-direction: row;
+	margin-left: 40px;
+
+	&__item:not(:last-child){
+		margin-right: 20px;
+	}
+
+	&__link{
+		color: var(--text-color);
+		font-size: 18px;
+		position: relative;
+
+		&::after{
+			content: "";
+    	display: block;
+    	position: absolute;
+    	right: 0;
+    	bottom: -3px;
+    	width: 0;
+    	height: 2px; 
+    	background-color: black;
+    	transition: width 0.3s;
+		}
+
+		&:hover::after{
+			content: "";
+    	width: 100%;
+   	 	display: block;
+   	 	position: absolute;
+    	left: 0;
+    	bottom: -3px;
+    	height: 2px;
+    	background-color: rgb(0, 0, 0);
+    	transition: width 0.3s; 
+		}
+	}
+
+
+	@media (max-width: 959px) {
+		display: none;
+	}
+}
+
+.contacts{
+	padding-top: 10px;
+	&__item:not(:last-child){
+		padding-top: 10px;
+		a{
+			color: var(--text-color);
+		}
+	}
+
+	@media (max-width: 959px) {
+		display: none;
+	}
+}

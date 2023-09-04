@@ -1,0 +1,34 @@
+<header class="header">
+  <div class="container header__container">
+      <div class="header__row">
+          <div class="header__main-navigation">
+              <div class="logo">ПП Вогнезахист</div>
+              @@include('header-nav.html')
+          </div>
+          <div class="header__additional-info">
+              <div class="header__contacts">
+                  <img class="header__phone-icon" src="./../img/phone.png" alt="phone icon">
+                  <ul class="contacts">
+                      <li class="contacts__item"><a href="tel:+380995278742">+38 (050) 220-97-57</a></li>
+                      <li class="contacts__item"><a href="tel:+380995278742">+38 (099) 527-87-42</a></li>
+                      <li class="contacts__item"><a href="tel:+380995278742">+38 (099) 527-87-42</a></li>
+                      <li class="contacts__item"><a class="callback-item" href="#">Зв'язатися з вами?</a></li>
+                  </ul>
+              </div>
+              <div class="header__options">
+                  <ul>
+                      <li>
+                          <a href="#">
+                              <img class="header__options__cart" src="./../img/svg/cart.svg" alt="Продуктовий кошик">
+                              <span class="header__options__cart__quantity">3</span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <button class="mobile-nav-btn">
+                  <div class="nav-icon"></div>
+              </button>
+          </div>
+      </div>
+  </header>
+@@include('mobile-nav.html')
